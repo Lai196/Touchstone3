@@ -1,6 +1,4 @@
-/* ================================
-   GLOBAL STYLES
-   ================================ */
+/* GLOBAL */
    body {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -10,9 +8,7 @@
     color: #131c26;
 }
 
-/* ================================
-   HEADER & NAVIGATION
-   ================================ */
+/* HEADER & NAVIGATION */
 .header, .footer {
     display: flex;
     align-items: center;
@@ -53,9 +49,7 @@ nav a {
     top: 10px;
 }
 
-/* ================================
-   LOGO STYLES
-   ================================ */
+/* LOGO */
 .logo {
     width: 100px;
     height: 50px;
@@ -71,9 +65,7 @@ nav a {
     width: auto;
 }
 
-/* ================================
-   PRODUCTS SECTION
-   ================================ */
+/* PRODUCTS */
 .products {
     display: flex;
     justify-content: center;
@@ -90,9 +82,7 @@ nav a {
     justify-content: center;
 }
 
-/* ================================
-   BANNER SECTION
-   ================================ */
+/* BANNER */
 .banner {
     display: flex;
     align-items: center;
@@ -130,9 +120,7 @@ nav a {
     margin-top: 10px;
 }
 
-/* ================================
-   PERKS SECTION
-   ================================ */
+/* PERKS */
 .perks {
     padding: 20px;
     text-align: center;
@@ -162,9 +150,7 @@ nav a {
     font-size: 14px;
 }
 
-/* ================================
-   SHOP BY SECTION
-   ================================ */
+/* SHOP BY */
 .shop-by {
     padding: 20px;
     text-align: center;
@@ -187,9 +173,7 @@ nav a {
     justify-content: center;
 }
 
-/* ================================
-   GALLERY SECTION
-   ================================ */
+/* GALLERY */
 .gallery {
     max-width: 80%;
     margin: 0 auto;
@@ -249,27 +233,25 @@ nav a {
     cursor: pointer;
     width: 100%;
 }
-/* View Cart Button Styling */
+/* View Cart Button */
 .view-cart {
     padding: 10px 20px;
-    background-color: #333; /* Same background color as Add to Cart */
+    background-color: #333;
     color: white;
     border: none;
-    border-radius: 4px; /* Matches the rounded corners of Add to Cart */
+    border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    display: inline-block; /* Ensures it behaves like a button */
-    margin: 10px 0; /* Adds some space around the button */
-    transition: background-color 0.3s; /* Smooth hover transition */
+    display: inline-block; 
+    margin: 10px 0; 
+    transition: background-color 0.3s; 
 }
 
 .view-cart:hover {
-    background-color: #00BFFF; /* Matches Add to Cart hover effect */
+    background-color: #00BFFF; 
 }
 
-/* ================================
-   ABOUT US SECTION
-   ================================ */
+/* ABOUT US SECTION */
 .about-us {
     max-width: 80%;
     margin: 0 auto;
@@ -295,9 +277,7 @@ nav a {
     margin-bottom: 5px;
 }
 
-/* ================================
-   CONTACT US SECTION
-   ================================ */
+/* CONTACT US */
 .contact-us {
     margin-top: 20px;
 }
@@ -350,9 +330,7 @@ nav a {
     margin-top: 20px;
 }
 
-/* ================================
-   EXPLORE SECTION
-   ================================ */
+/* EXPLORE */
 .explore {
     max-width: 80%;
     margin: 0 auto;
@@ -392,25 +370,22 @@ nav a {
     font-size: 14px;
 }
 
-/* ================================
-   FOOTER STYLES
-   ================================ */
+/* FOOTER STYLES*/
    .footer {
     background-color: #AFEEEE;
     color: #333;
     padding: 30px 20px;
     text-align: center;
     max-width: 80%;
-    margin: 40px auto 0; /* Centers footer horizontally and adds top margin */
+    margin: 40px auto 0; 
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers content horizontally */
+    align-items: center; 
 }
 
-/* Footer Content Styling */
 .footer-content {
     width: 100%;
-    max-width: 600px; /* Optional: limits content width */
+    max-width: 600px; 
 }
 
 .subscribe-form {
@@ -418,7 +393,7 @@ nav a {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    flex-wrap: wrap; 
 }
 
 .subscribe-form input {
@@ -443,7 +418,7 @@ nav a {
     background-color: #00BFFF;
 }
 
-/* Modal Overlay Styles */
+/* Modal */
 #modal-overlay {
     position: fixed;
     top: 0;
@@ -457,7 +432,6 @@ nav a {
     z-index: 1000;
 }
 
-/* Modal Content Styles */
 #cart-modal {
     background: white;
     padding: 20px;
@@ -499,15 +473,14 @@ nav a {
 }
 
 
-/* Modal Styles */
 .modal {
-    display: none; /* Hidden by default */
+    display: none; 
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0.5); 
     z-index: 1000;
     justify-content: center;
     align-items: center;

@@ -1,20 +1,20 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Handle Contact Us form submission
+    // subscription
     const contactForm = document.querySelector('.contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent actual form submission
+            event.preventDefault(); 
 
-            // Get form field values
+            // Get values
             const nameField = document.getElementById('name');
             const emailField = document.getElementById('email');
             const phoneField = document.getElementById('phone');
             const feedbackField = document.getElementById('feedback');
 
-            // Array to collect missing fields
+            // Missing fields array
             let missingFields = [];
 
-            // Check if each field is filled
+            // Check filled
             if (!nameField.value.trim()) {
                 missingFields.push('Name');
             }
@@ -28,20 +28,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 missingFields.push('Feedback');
             }
 
-            // If there are missing fields, show a custom alert
+            // Alert for missing fields
             if (missingFields.length > 0) {
                 alert(`Please fill out the following fields: ${missingFields.join(', ')}`);
-                // Trigger native tooltip prompts for incomplete fields
                 if (!nameField.checkValidity()) nameField.reportValidity();
                 if (!emailField.checkValidity()) emailField.reportValidity();
                 if (!phoneField.checkValidity()) phoneField.reportValidity();
                 if (!feedbackField.checkValidity()) feedbackField.reportValidity();
             } else {
-                // Show a success alert if all fields are filled
+                // Alert for success 
                 const name = nameField.value.trim() || 'Guest';
                 alert(`Thank you for your message, ${name}!`);
 
-                // Clear the form fields
                 contactForm.reset();
             }
         });

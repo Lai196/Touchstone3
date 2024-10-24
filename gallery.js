@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Array to store cart items
+    // Cart items array
     let cart = [];
 
-    // Handle subscription form submission
+    // subscription
     const subscribeForm = document.querySelector('.subscribe-form');
     if (subscribeForm) {
         subscribeForm.addEventListener('submit', function(event) {
@@ -11,32 +11,29 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Handle Add to Cart button clicks
+    // Add to Cart button
     const addToCartButtons = document.querySelectorAll('.add-to-cart');
     addToCartButtons.forEach(function(button) {
         button.addEventListener('click', function() {
-            // Get product title
             const productTitle = button.parentElement.querySelector('h3').innerText;
             
-            // Add item to cart
             cart.push(productTitle);
             
-            // Alert for adding to cart
+            // Alert
             alert(`"${productTitle}" has been added to the cart!`);
         });
     });
 
-    // Handle View Cart button click
+    // View Cart button
     const viewCartButton = document.querySelector('.view-cart');
     if (viewCartButton) {
         viewCartButton.addEventListener('click', function() {
-            displayCartModal(); // Show the cart modal
+            displayCartModal(); 
         });
     }
 
-    // Function to display the cart modal
+    // Function for display cart
     function displayCartModal() {
-        // Create cart content
         let cartContent = '<h2>Your Cart</h2><ul>';
         if (cart.length === 0) {
             cartContent += '<li>Your cart is empty!</li>';
@@ -47,47 +44,41 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         cartContent += '</ul>';
 
-        // Add buttons for "Clear Cart" and "Place Order"
         cartContent += `
             <button id="clear-cart">Clear Cart</button>
             <button id="place-order">Place Order</button>
         `;
 
-        // Show cart in a modal-like alert
         showCartModal(cartContent);
 
-        // Handle "Clear Cart" button
+        // Clear Cart button
         document.getElementById('clear-cart').addEventListener('click', function() {
-            cart = []; // Clear the cart array
-            displayCartModal(); // Refresh the modal to show an empty cart
+            cart = []; 
+            displayCartModal();
         });
 
-        // Handle "Place Order" button
+        // Place Order button
         document.getElementById('place-order').addEventListener('click', function() {
-            cart = []; // Clear the cart after placing order
-            alert('Thank you for your order.'); // Show order confirmation
-            closeModal(); // Close the modal
+            cart = []; 
+            alert('Thank you for your order.'); 
+            closeModal();
         });
     }
 
-    // Function to display a modal-like alert
+    // Function for alert
     function showCartModal(content) {
-        // Create modal elements
         const modalOverlay = document.createElement('div');
         modalOverlay.id = 'modal-overlay';
         const modal = document.createElement('div');
         modal.id = 'cart-modal';
         modal.innerHTML = content;
 
-        // Append modal to overlay and to the body
         modalOverlay.appendChild(modal);
         document.body.appendChild(modalOverlay);
 
-        // Add close functionality
         modalOverlay.addEventListener('click', closeModal);
     }
 
-    // Function to close the modal
     function closeModal() {
         const modalOverlay = document.getElementById('modal-overlay');
         if (modalOverlay) {

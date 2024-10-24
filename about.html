@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <img src="Logo.png" alt="Logo" style="height: 50px;">
+        </div>
+        <div class="nav-container">
+            <h1 class="page-title">Book Haven Bookstore</h1>
+            <nav>
+                <a href="index.html">Homepage</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about.html">About Us</a>
+                <a href="explore.html">Explore</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <h2>About Us</h2>
+        <p>Welcome to Book Haven Bookstore, your go-to destination for all things literary. We offer a wide range of books, from fiction to self-help, to cater to every reader’s passion.</p>
+
+        <!-- Hours of Operation -->
+        <div class="hours">
+            <h2>Hours of Operation:</h2>
+            <p>Monday to Friday: 9 a.m. to 8 p.m.</p>
+            <p>Saturday: 10 a.m. to 6 p.m.</p>
+            <p>Sunday: 11 a.m. to 5 p.m.</p>
+        </div>
+
+        <!-- Contact Us Form -->
+        <div class="contact-us">
+            <h2>Contact Us</h2>
+        
+            <form class="contact-form" action="#" method="POST">
+                <div class="left-column">
+                    <!-- Name, Email, and Phone in left column -->
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="text" id="phone" name="phone" required>
+                    </div>
+                </div>
+        
+                <div class="right-column">
+                    <!-- Feedback in right column -->
+                    <div class="form-group">
+                        <label for="feedback">Feedback:</label>
+                        <textarea id="feedback" name="feedback" rows="10" required></textarea>
+                    </div>
+                </div>
+        
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section with Subscribe Form -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to receive the latest updates and offers:</p>
+            <form class="subscribe-form" action="#" method="POST">
+                <input type="email" id="subscribe-email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </footer>
+    
+    <!-- Link to JS File -->
+    <script src="about.js"></script>
+</body>
+</html>

@@ -1,0 +1,534 @@
+/* ================================
+   GLOBAL STYLES
+   ================================ */
+   body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: #131c26;
+}
+
+/* ================================
+   HEADER & NAVIGATION
+   ================================ */
+.header, .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: #AFEEEE;
+    flex-wrap: wrap;
+}
+
+.page-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0;
+    margin-right: auto;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    top: 10px;
+}
+
+/* ================================
+   LOGO STYLES
+   ================================ */
+.logo {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+.logo img {
+    transform: scale(1.8);
+    height: auto;
+    width: auto;
+}
+
+/* ================================
+   PRODUCTS SECTION
+   ================================ */
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 30px;
+}
+
+.product {
+    width: 260px;
+    height: 160px;
+    background-color: #AFEEEE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ================================
+   BANNER SECTION
+   ================================ */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.banner-image {
+    width: 36%;
+    height: 400px;
+    background-color: #AFEEEE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-now {
+    width: 10%;
+    height: 200px;
+    background-color: #AFEEEE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.order-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* ================================
+   PERKS SECTION
+   ================================ */
+.perks {
+    padding: 20px;
+    text-align: center;
+}
+
+.perk-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.perk {
+    width: 200px;
+    min-height: 150px;
+    background-color: #AFEEEE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.perk p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* ================================
+   SHOP BY SECTION
+   ================================ */
+.shop-by {
+    padding: 20px;
+    text-align: center;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.category {
+    width: 150px;
+    height: 50px;
+    background-color: #AFEEEE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ================================
+   GALLERY SECTION
+   ================================ */
+.gallery {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.gallery-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.gallery h2 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-items: stretch;
+    width: 100%;
+}
+
+.gallery-item {
+    width: 100%;
+    background-color: #AFEEEE;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.gallery-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.gallery-item p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+/* View Cart Button Styling */
+.view-cart {
+    padding: 10px 20px;
+    background-color: #333; /* Same background color as Add to Cart */
+    color: white;
+    border: none;
+    border-radius: 4px; /* Matches the rounded corners of Add to Cart */
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block; /* Ensures it behaves like a button */
+    margin: 10px 0; /* Adds some space around the button */
+    transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+.view-cart:hover {
+    background-color: #00BFFF; /* Matches Add to Cart hover effect */
+}
+
+/* ================================
+   ABOUT US SECTION
+   ================================ */
+.about-us {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-us h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.about-us p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.hours {
+    margin-bottom: 30px;
+}
+
+.hours h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+/* ================================
+   CONTACT US SECTION
+   ================================ */
+.contact-us {
+    margin-top: 20px;
+}
+
+.contact-us h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-us form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.left-column,
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us input,
+.contact-us textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-us textarea {
+    resize: vertical;
+}
+
+.contact-us button {
+    grid-column: span 2;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* ================================
+   EXPLORE SECTION
+   ================================ */
+.explore {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.customer-reviews {
+    margin-bottom: 30px;
+}
+
+.customer-reviews h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.review-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.review-item {
+    flex: 1;
+    background-color: #AFEEEE;
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.review-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.review-item p {
+    font-size: 14px;
+}
+
+/* ================================
+   FOOTER STYLES
+   ================================ */
+   .footer {
+    background-color: #AFEEEE;
+    color: #333;
+    padding: 30px 20px;
+    text-align: center;
+    max-width: 80%;
+    margin: 40px auto 0; /* Centers footer horizontally and adds top margin */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+}
+
+/* Footer Content Styling */
+.footer-content {
+    width: 100%;
+    max-width: 600px; /* Optional: limits content width */
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.subscribe-form input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    background-color: #87CEEB;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.subscribe-form button:hover {
+    background-color: #00BFFF;
+}
+
+/* Modal Overlay Styles */
+#modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Modal Content Styles */
+#cart-modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+}
+
+#cart-modal h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+#cart-modal ul {
+    list-style-type: disc;
+    text-align: left;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+#cart-modal li {
+    margin: 5px 0;
+}
+
+#cart-modal button {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    background-color: #87CEEB;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#cart-modal button:hover {
+    background-color: #00BFFF;
+}
+
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+}
+
+.close-button {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#modal-message {
+    font-size: 18px;
+    margin-top: 10px;
+}
